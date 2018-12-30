@@ -35,4 +35,13 @@ let tenPercentTip = produceTipCalculator(.10);
 tenPercentTip(50);
 // expect(tenPercentTip(30)).to.equal(3)
 tenPercentTip(30);
-
+function createDriver (name) {
+    let driverId = 0
+    return function Driver (name) { 
+        this.name = name
+        this.id = driverId++
+    }
+}
+let Driver = createDriver('sam');
+let Driver2 = createDriver('bob');
+Driver === Driver2;
