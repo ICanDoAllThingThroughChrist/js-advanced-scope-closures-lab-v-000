@@ -3,12 +3,12 @@ function produceDrivingRange(blockRange) {
     debugger;
     const distance = parseInt(end, 10) - parseInt(start, 10)
     debugger;
-    if (blockRange > distance) 
+    if (blockRange > distance)
         {
         debugger;
         return `within range by ${blockRange - distance}`
-        } 
-    else 
+        }
+    else
         {
         return `${distance - blockRange} blocks out of range`
         }
