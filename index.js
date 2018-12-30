@@ -22,3 +22,17 @@ function produceDrivingRange(blockRange) {
 //   })
 let eightBlockRange = produceDrivingRange(8)
 eightBlockRange('10th', '20th');
+function produceTipCalculator (tip) {
+    return function (fare ) {
+        debugger;
+        const product = fare * tip
+        debugger;
+    return product
+    }
+}
+let tenPercentTip = produceTipCalculator(.10);
+// expect(tenPercentTip(50)).to.equal(5)
+tenPercentTip(50);
+// expect(tenPercentTip(30)).to.equal(3)
+tenPercentTip(30);
+
